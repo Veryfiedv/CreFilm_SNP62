@@ -45,3 +45,16 @@ extern "C" {
 	/*!
 	\brief Highest possible rate supported by framerate controller in Hz (1/s).
 	*/
+#define FPS_UPPER_LIMIT		200
+
+	/*!
+	\brief Lowest possible rate supported by framerate controller in Hz (1/s).
+	*/
+#define FPS_LOWER_LIMIT		1
+
+	/*!
+	\brief Default rate of framerate controller in Hz (1/s).
+	*/
+#define FPS_DEFAULT		30
+
+	/*! 
