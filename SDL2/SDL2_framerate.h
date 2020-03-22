@@ -23,3 +23,13 @@ misrepresented as being the original software.
 
 3. This notice may not be removed or altered from any source
 distribution.
+
+Andreas Schiffler -- aschiffler at ferzkopp dot net
+
+*/
+
+#ifndef _SDL2_framerate_h
+#define _SDL2_framerate_h
+
+/* Set up for C function definitions, even when using C++ */
+#ifdef __cplusplus
