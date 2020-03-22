@@ -33,3 +33,15 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 
 /* Set up for C function definitions, even when using C++ */
 #ifdef __cplusplus
+extern "C" {
+#endif
+
+	/* --- */
+
+#include <SDL2/SDL.h>
+
+	/* --------- Definitions */
+
+	/*!
+	\brief Highest possible rate supported by framerate controller in Hz (1/s).
+	*/
