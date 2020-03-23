@@ -58,3 +58,14 @@ extern "C" {
 #define FPS_DEFAULT		30
 
 	/*! 
+	\brief Structure holding the state and timing information of the framerate controller. 
+	*/
+	typedef struct {
+		Uint32 framecount;
+		float rateticks;
+		Uint32 baseticks;
+		Uint32 lastticks;
+		Uint32 rate;
+	} FPSmanager;
+
+	/* ---- Function Prototypes */
