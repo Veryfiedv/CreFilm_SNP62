@@ -69,3 +69,20 @@ extern "C" {
 	} FPSmanager;
 
 	/* ---- Function Prototypes */
+
+#ifdef _MSC_VER
+#  if defined(DLL_EXPORT) && !defined(LIBSDL2_GFX_DLL_IMPORT)
+#    define SDL2_FRAMERATE_SCOPE __declspec(dllexport)
+#  else
+#    ifdef LIBSDL2_GFX_DLL_IMPORT
+#      define SDL2_FRAMERATE_SCOPE __declspec(dllimport)
+#    endif
+#  endif
+#endif
+#ifndef SDL2_FRAMERATE_SCOPE
+#  define SDL2_FRAMERATE_SCOPE extern
+#endif
+
+	/* Functions return 0 or value for sucess and -1 for error */
+
+	SDL2_FRAMERATE_SCOPE void SDL_initFramerate(FPSmanager * manager);
