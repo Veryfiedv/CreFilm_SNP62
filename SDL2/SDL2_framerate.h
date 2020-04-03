@@ -86,3 +86,13 @@ extern "C" {
 	/* Functions return 0 or value for sucess and -1 for error */
 
 	SDL2_FRAMERATE_SCOPE void SDL_initFramerate(FPSmanager * manager);
+	SDL2_FRAMERATE_SCOPE int SDL_setFramerate(FPSmanager * manager, Uint32 rate);
+	SDL2_FRAMERATE_SCOPE int SDL_getFramerate(FPSmanager * manager);
+	SDL2_FRAMERATE_SCOPE int SDL_getFramecount(FPSmanager * manager);
+	SDL2_FRAMERATE_SCOPE Uint32 SDL_framerateDelay(FPSmanager * manager);
+
+	/* --- */
+
+	/* Ends C function definitions when using C++ */
+#ifdef __cplusplus
+}
