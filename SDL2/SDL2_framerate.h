@@ -96,3 +96,6 @@ extern "C" {
 	/* Ends C function definitions when using C++ */
 #ifdef __cplusplus
 }
+#endif
+
+#endif				/* _SDL2_framerate_h */
