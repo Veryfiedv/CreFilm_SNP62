@@ -55,3 +55,16 @@ extern "C" {
 #ifdef _MSC_VER
 #  if defined(DLL_EXPORT) && !defined(LIBSDL2_GFX_DLL_IMPORT)
 #    define SDL2_GFXPRIMITIVES_SCOPE __declspec(dllexport)
+#  else
+#    ifdef LIBSDL2_GFX_DLL_IMPORT
+#      define SDL2_GFXPRIMITIVES_SCOPE __declspec(dllimport)
+#    endif
+#  endif
+#endif
+#ifndef SDL2_GFXPRIMITIVES_SCOPE
+#  define SDL2_GFXPRIMITIVES_SCOPE extern
+#endif
+
+	/* Note: all ___Color routines expect the color to be in format 0xRRGGBBAA */
+
+	/* Pixel */
