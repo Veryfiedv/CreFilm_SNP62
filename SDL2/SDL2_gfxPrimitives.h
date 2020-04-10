@@ -42,3 +42,16 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+	/* ----- Versioning */
+
+#define SDL2_GFXPRIMITIVES_MAJOR	1
+#define SDL2_GFXPRIMITIVES_MINOR	0
+#define SDL2_GFXPRIMITIVES_MICRO	1
+
+
+	/* ---- Function Prototypes */
+
+#ifdef _MSC_VER
+#  if defined(DLL_EXPORT) && !defined(LIBSDL2_GFX_DLL_IMPORT)
+#    define SDL2_GFXPRIMITIVES_SCOPE __declspec(dllexport)
