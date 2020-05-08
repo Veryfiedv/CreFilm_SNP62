@@ -164,3 +164,19 @@ extern "C" {
 	SDL2_GFXPRIMITIVES_SCOPE int filledEllipseColor(SDL_Renderer * renderer, Sint16 x, Sint16 y, Sint16 rx, Sint16 ry, Uint32 color);
 	SDL2_GFXPRIMITIVES_SCOPE int filledEllipseRGBA(SDL_Renderer * renderer, Sint16 x, Sint16 y,
 		Sint16 rx, Sint16 ry, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
+
+	/* Pie */
+
+	SDL2_GFXPRIMITIVES_SCOPE int pieColor(SDL_Renderer * renderer, Sint16 x, Sint16 y, Sint16 rad,
+		Sint16 start, Sint16 end, Uint32 color);
+	SDL2_GFXPRIMITIVES_SCOPE int pieRGBA(SDL_Renderer * renderer, Sint16 x, Sint16 y, Sint16 rad,
+		Sint16 start, Sint16 end, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
+
+	/* Filled Pie */
+
+	SDL2_GFXPRIMITIVES_SCOPE int filledPieColor(SDL_Renderer * renderer, Sint16 x, Sint16 y, Sint16 rad,
+		Sint16 start, Sint16 end, Uint32 color);
+	SDL2_GFXPRIMITIVES_SCOPE int filledPieRGBA(SDL_Renderer * renderer, Sint16 x, Sint16 y, Sint16 rad,
+		Sint16 start, Sint16 end, Uint8 r, Uint8 g, Uint8 b, Uint8 a);
+
+	/* Trigon */
