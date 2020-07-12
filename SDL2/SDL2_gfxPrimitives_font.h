@@ -475,3 +475,10 @@ static unsigned char gfxPrimitivesFontdata[GFX_FONTDATAMAX] = {
 	0xcc,			/* 11001100 */
 	0x76,			/* 01110110 */
 	0x00,			/* 00000000 */
+
+	/*
+	* 39 0x27 ''' 
+	*/
+	0x18,			/* 00011000 */
+	0x18,			/* 00011000 */
+	0x30,			/* 00110000 */
