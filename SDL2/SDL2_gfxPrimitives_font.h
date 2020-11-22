@@ -1092,3 +1092,9 @@ static unsigned char gfxPrimitivesFontdata[GFX_FONTDATAMAX] = {
 	* 90 0x5a 'Z' 
 	*/
 	0xfe,			/* 11111110 */
+	0xc6,			/* 11000110 */
+	0x8c,			/* 10001100 */
+	0x18,			/* 00011000 */
+	0x32,			/* 00110010 */
+	0x66,			/* 01100110 */
+	0xfe,			/* 11111110 */
