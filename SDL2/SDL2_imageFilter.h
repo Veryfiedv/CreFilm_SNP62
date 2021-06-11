@@ -34,3 +34,22 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 /* Set up for C function definitions, even when using C++ */
 #ifdef __cplusplus
 extern "C" {
+#endif
+
+	/* ---- Function Prototypes */
+
+#ifdef _MSC_VER
+#  if defined(DLL_EXPORT) && !defined(LIBSDL2_GFX_DLL_IMPORT)
+#    define SDL2_IMAGEFILTER_SCOPE __declspec(dllexport)
+#  else
+#    ifdef LIBSDL2_GFX_DLL_IMPORT
+#      define SDL2_IMAGEFILTER_SCOPE __declspec(dllimport)
+#    endif
+#  endif
+#endif
+#ifndef SDL2_IMAGEFILTER_SCOPE
+#  define SDL2_IMAGEFILTER_SCOPE extern
+#endif
+
+	/* Comments:                                                                           */
+	/*  1.) MMX functions work best if all data blocks are aligned on a 32 bytes boundary. */
