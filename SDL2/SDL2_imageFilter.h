@@ -53,3 +53,18 @@ extern "C" {
 
 	/* Comments:                                                                           */
 	/*  1.) MMX functions work best if all data blocks are aligned on a 32 bytes boundary. */
+	/*  2.) Data that is not within an 8 byte boundary is processed using the C routine.   */
+	/*  3.) Convolution routines do not have C routines at this time.                      */
+
+	// Detect MMX capability in CPU
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterMMXdetect(void);
+
+	// Force use of MMX off (or turn possible use back on)
+	SDL2_IMAGEFILTER_SCOPE void SDL_imageFilterMMXoff(void);
+	SDL2_IMAGEFILTER_SCOPE void SDL_imageFilterMMXon(void);
+
+	//
+	// All routines return:
+	//   0   OK
+	//  -1   Error (internal error, parameter error)
+	//
