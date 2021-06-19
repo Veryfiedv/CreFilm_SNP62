@@ -82,3 +82,18 @@ extern "C" {
 	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterAbsDiff(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
 
 	//  SDL_imageFilterMult: D = saturation(S1 * S2)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterMult(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterMultNor: D = S1 * S2   (non-MMX)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterMultNor(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterMultDivby2: D = saturation255(S1/2 * S2)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterMultDivby2(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest,
+		unsigned int length);
+
+	//  SDL_imageFilterMultDivby4: D = saturation255(S1/2 * S2/2)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterMultDivby4(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest,
+		unsigned int length);
+
+	//  SDL_imageFilterBitAnd: D = S1 & S2
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterBitAnd(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
