@@ -68,3 +68,17 @@ extern "C" {
 	//   0   OK
 	//  -1   Error (internal error, parameter error)
 	//
+
+	//  SDL_imageFilterAdd: D = saturation255(S1 + S2)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterAdd(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterMean: D = S1/2 + S2/2
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterMean(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterSub: D = saturation0(S1 - S2)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterSub(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterAbsDiff: D = | S1 - S2 |
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterAbsDiff(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterMult: D = saturation(S1 * S2)
