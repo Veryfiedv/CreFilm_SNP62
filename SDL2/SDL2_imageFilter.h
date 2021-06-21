@@ -97,3 +97,14 @@ extern "C" {
 
 	//  SDL_imageFilterBitAnd: D = S1 & S2
 	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterBitAnd(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterBitOr: D = S1 | S2
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterBitOr(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterDiv: D = S1 / S2   (non-MMX)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterDiv(unsigned char *Src1, unsigned char *Src2, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterBitNegation: D = !S
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterBitNegation(unsigned char *Src1, unsigned char *Dest, unsigned int length);
+
+	//  SDL_imageFilterAddByte: D = saturation255(S + C)
