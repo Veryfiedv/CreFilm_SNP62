@@ -108,3 +108,13 @@ extern "C" {
 	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterBitNegation(unsigned char *Src1, unsigned char *Dest, unsigned int length);
 
 	//  SDL_imageFilterAddByte: D = saturation255(S + C)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterAddByte(unsigned char *Src1, unsigned char *Dest, unsigned int length, unsigned char C);
+
+	//  SDL_imageFilterAddUint: D = saturation255(S + (uint)C)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterAddUint(unsigned char *Src1, unsigned char *Dest, unsigned int length, unsigned int C);
+
+	//  SDL_imageFilterAddByteToHalf: D = saturation255(S/2 + C)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterAddByteToHalf(unsigned char *Src1, unsigned char *Dest, unsigned int length,
+		unsigned char C);
+
+	//  SDL_imageFilterSubByte: D = saturation0(S - C)
