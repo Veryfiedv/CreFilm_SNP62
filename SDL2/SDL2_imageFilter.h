@@ -127,3 +127,15 @@ extern "C" {
 	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterShiftRight(unsigned char *Src1, unsigned char *Dest, unsigned int length, unsigned char N);
 
 	//  SDL_imageFilterShiftRightUint: D = saturation0((uint)S >> N)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterShiftRightUint(unsigned char *Src1, unsigned char *Dest, unsigned int length, unsigned char N);
+
+	//  SDL_imageFilterMultByByte: D = saturation255(S * C)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterMultByByte(unsigned char *Src1, unsigned char *Dest, unsigned int length, unsigned char C);
+
+	//  SDL_imageFilterShiftRightAndMultByByte: D = saturation255((S >> N) * C)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterShiftRightAndMultByByte(unsigned char *Src1, unsigned char *Dest, unsigned int length,
+		unsigned char N, unsigned char C);
+
+	//  SDL_imageFilterShiftLeftByte: D = (S << N)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterShiftLeftByte(unsigned char *Src1, unsigned char *Dest, unsigned int length,
+		unsigned char N);
