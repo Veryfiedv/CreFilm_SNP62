@@ -139,3 +139,18 @@ extern "C" {
 	//  SDL_imageFilterShiftLeftByte: D = (S << N)
 	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterShiftLeftByte(unsigned char *Src1, unsigned char *Dest, unsigned int length,
 		unsigned char N);
+
+	//  SDL_imageFilterShiftLeftUint: D = ((uint)S << N)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterShiftLeftUint(unsigned char *Src1, unsigned char *Dest, unsigned int length,
+		unsigned char N);
+
+	//  SDL_imageFilterShiftLeft: D = saturation255(S << N)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterShiftLeft(unsigned char *Src1, unsigned char *Dest, unsigned int length, unsigned char N);
+
+	//  SDL_imageFilterBinarizeUsingThreshold: D = S >= T ? 255:0
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterBinarizeUsingThreshold(unsigned char *Src1, unsigned char *Dest, unsigned int length,
+		unsigned char T);
+
+	//  SDL_imageFilterClipToRange: D = (S >= Tmin) & (S <= Tmax) 255:0
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterClipToRange(unsigned char *Src1, unsigned char *Dest, unsigned int length,
+		unsigned char Tmin, unsigned char Tmax);
