@@ -154,3 +154,14 @@ extern "C" {
 	//  SDL_imageFilterClipToRange: D = (S >= Tmin) & (S <= Tmax) 255:0
 	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterClipToRange(unsigned char *Src1, unsigned char *Dest, unsigned int length,
 		unsigned char Tmin, unsigned char Tmax);
+
+	//  SDL_imageFilterNormalizeLinear: D = saturation255((Nmax - Nmin)/(Cmax - Cmin)*(S - Cmin) + Nmin)
+	SDL2_IMAGEFILTER_SCOPE int SDL_imageFilterNormalizeLinear(unsigned char *Src, unsigned char *Dest, unsigned int length, int Cmin,
+		int Cmax, int Nmin, int Nmax);
+
+	/* Ends C function definitions when using C++ */
+#ifdef __cplusplus
+}
+#endif
+
+#endif				/* _SDL_imageFilter_h */
