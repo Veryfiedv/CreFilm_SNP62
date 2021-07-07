@@ -1,3 +1,3 @@
 /*  
 
-SDL2_rotozoom.c
+SDL2_rotozoom.c: rotozoom
