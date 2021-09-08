@@ -13,4 +13,5 @@ including commercial applications, and to alter it and redistribute it
 freely, subject to the following restrictions:
 
 1. The origin of this software must not be misrepresented; you must not
-claim that you wrote the original software. If you use this sof
+claim that you wrote the original software. If you use this software
+in a p
