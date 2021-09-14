@@ -16,3 +16,5 @@ freely, subject to the following restrictions:
 claim that you wrote the original software. If you use this software
 in a product, an acknowledgment in the product documentation would be
 appreciated but is not required.
+
+2. Altered s
