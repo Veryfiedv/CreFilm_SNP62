@@ -15,4 +15,4 @@ freely, subject to the following restrictions:
 1. The origin of this software must not be misrepresented; you must not
 claim that you wrote the original software. If you use this software
 in a product, an acknowledgment in the product documentation would be
-appreciated but is n
+appreciated but is not required.
