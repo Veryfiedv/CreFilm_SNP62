@@ -21,4 +21,6 @@ appreciated but is not required.
 misrepresented as being the original software.
 
 3. This notice may not be removed or altered from any source
-distributi
+distribution.
+
+Andreas Sc
