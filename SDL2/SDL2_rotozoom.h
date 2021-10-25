@@ -27,3 +27,4 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 
 */
 
+#ifndef _SDL2_ro
