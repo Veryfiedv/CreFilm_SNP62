@@ -27,4 +27,5 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 
 */
 
-#ifndef _SDL2_rotozoo
+#ifndef _SDL2_rotozoom_h
+#defin
