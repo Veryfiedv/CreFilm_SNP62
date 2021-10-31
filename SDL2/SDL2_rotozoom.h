@@ -32,4 +32,4 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 
 #include <math.h>
 
-/* Set up for
+/* Set up for C function defi
