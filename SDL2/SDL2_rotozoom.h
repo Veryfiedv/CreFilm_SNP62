@@ -31,3 +31,5 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 #define _SDL2_rotozoom_h
 
 #include <math.h>
+
+/* Set up for
