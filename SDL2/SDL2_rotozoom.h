@@ -32,4 +32,4 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 
 #include <math.h>
 
-/* Set up for C function definitions, eve
+/* Set up for C function definitions, even when usi
