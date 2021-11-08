@@ -32,4 +32,5 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 
 #include <math.h>
 
-/* Set up for C function definitions, even when usi
+/* Set up for C function definitions, even when using C++ */
+#ifd
