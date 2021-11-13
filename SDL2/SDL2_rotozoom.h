@@ -37,4 +37,5 @@ Andreas Schiffler -- aschiffler at ferzkopp dot net
 extern "C" {
 #endif
 
-#
+#ifndef M_PI
+#define 
