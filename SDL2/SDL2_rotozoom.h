@@ -38,4 +38,4 @@ extern "C" {
 #endif
 
 #ifndef M_PI
-#define 
+#define M_PI	3.141592
