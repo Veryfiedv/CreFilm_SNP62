@@ -44,3 +44,6 @@ extern "C" {
 #include <SDL2/SDL.h>
 
 	/* ---- Defines */
+
+	/*!
+	\brief D
