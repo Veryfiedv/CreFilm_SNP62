@@ -46,4 +46,5 @@ extern "C" {
 	/* ---- Defines */
 
 	/*!
-	\brief Disable anti-aliasi
+	\brief Disable anti-aliasing (no smoothing).
+	
