@@ -46,4 +46,4 @@ extern "C" {
 	/* ---- Defines */
 
 	/*!
-	\brief D
+	\brief Disable anti-aliasi
