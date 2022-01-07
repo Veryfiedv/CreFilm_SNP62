@@ -48,4 +48,6 @@ extern "C" {
 	/*!
 	\brief Disable anti-aliasing (no smoothing).
 	*/
-#define SMO
+#define SMOOTHING_OFF		0
+
+	/
