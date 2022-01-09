@@ -50,4 +50,5 @@ extern "C" {
 	*/
 #define SMOOTHING_OFF		0
 
-	/
+	/*!
+	\brief Ena
