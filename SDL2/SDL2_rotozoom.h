@@ -57,4 +57,5 @@ extern "C" {
 
 	/* ---- Function Prototypes */
 
-#ifdef _MS
+#ifdef _MSC_VER
+#  if defin
