@@ -53,4 +53,6 @@ extern "C" {
 	/*!
 	\brief Enable anti-aliasing (smoothing).
 	*/
-#define SMOOTH
+#define SMOOTHING_ON		1
+
+	/*
