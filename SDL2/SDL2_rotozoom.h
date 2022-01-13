@@ -55,4 +55,4 @@ extern "C" {
 	*/
 #define SMOOTHING_ON		1
 
-	/* ---- Functi
+	/* ---- Function Prototypes *
