@@ -51,4 +51,6 @@ extern "C" {
 #define SMOOTHING_OFF		0
 
 	/*!
-	\brief Enable anti-aliasing (smooth
+	\brief Enable anti-aliasing (smoothing).
+	*/
+#de
