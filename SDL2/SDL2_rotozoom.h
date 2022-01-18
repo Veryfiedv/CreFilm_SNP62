@@ -58,4 +58,5 @@ extern "C" {
 	/* ---- Function Prototypes */
 
 #ifdef _MSC_VER
-#  if defined(DLL_EXPORT) && !defined(LIBSDL2_GFX_DLL_IMP
+#  if defined(DLL_EXPORT) && !defined(LIBSDL2_GFX_DLL_IMPORT)
+#    de
