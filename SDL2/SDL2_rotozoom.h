@@ -58,4 +58,4 @@ extern "C" {
 	/* ---- Function Prototypes */
 
 #ifdef _MSC_VER
-#  if defin
+#  if defined(DLL_EXPORT) 
