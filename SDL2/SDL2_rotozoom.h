@@ -59,4 +59,6 @@ extern "C" {
 
 #ifdef _MSC_VER
 #  if defined(DLL_EXPORT) && !defined(LIBSDL2_GFX_DLL_IMPORT)
-#    define SDL2_ROTOZOOM_SCOPE __declspec(dllexp
+#    define SDL2_ROTOZOOM_SCOPE __declspec(dllexport)
+#  else
+# 
