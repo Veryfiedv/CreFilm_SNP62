@@ -62,4 +62,4 @@ extern "C" {
 #    define SDL2_ROTOZOOM_SCOPE __declspec(dllexport)
 #  else
 #    ifdef LIBSDL2_GFX_DLL_IMPORT
-#      de
+#      define SDL2_ROTOZO
