@@ -66,3 +66,4 @@ extern "C" {
 #    endif
 #  endif
 #endif
+#ifndef
