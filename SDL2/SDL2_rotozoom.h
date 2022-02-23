@@ -66,4 +66,4 @@ extern "C" {
 #    endif
 #  endif
 #endif
-#ifndef
+#ifndef SDL2_
