@@ -72,4 +72,6 @@ extern "C" {
 
 	/* 
 
-	Rotozoom f
+	Rotozoom functions
+
+	*
