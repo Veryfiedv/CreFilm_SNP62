@@ -74,4 +74,6 @@ extern "C" {
 
 	Rotozoom functions
 
-	*
+	*/
+
+	SDL
