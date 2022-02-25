@@ -68,4 +68,8 @@ extern "C" {
 #endif
 #ifndef SDL2_ROTOZOOM_SCOPE
 #  define SDL2_ROTOZOOM_SCOPE extern
-#end
+#endif
+
+	/* 
+
+	
