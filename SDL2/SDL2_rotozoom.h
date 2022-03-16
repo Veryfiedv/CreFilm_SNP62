@@ -76,4 +76,4 @@ extern "C" {
 
 	*/
 
-	SDL2_ROTOZOOM_SCOPE SDL_Surface *rotozoomSurf
+	SDL2_ROTOZOOM_SCOPE SDL_Surface *rotozoomSurface(SDL_Surface 
