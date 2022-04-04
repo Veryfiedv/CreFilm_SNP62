@@ -76,4 +76,4 @@ extern "C" {
 
 	*/
 
-	SDL2_ROTOZOOM_SCOPE SDL_Surface *rotozoomSurface(SDL_Surface * src, double angle, double
+	SDL2_ROTOZOOM_SCOPE SDL_Surface *rotozoomSurface(SDL_Surface * src, double angle, double zoom, int smooth);
