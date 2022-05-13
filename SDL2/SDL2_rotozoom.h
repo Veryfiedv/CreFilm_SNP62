@@ -83,4 +83,5 @@ extern "C" {
 
 
 	SDL2_ROTOZOOM_SCOPE void rotozoomSurfaceSize(int width, int height, double angle, double zoom, int *dstwidth,
-		int *d
+		int *dstheight);
+
