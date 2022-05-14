@@ -86,4 +86,4 @@ extern "C" {
 		int *dstheight);
 
 	SDL2_ROTOZOOM_SCOPE void rotozoomSurfaceSizeXY
-		(int width, int height, double angle, double zoomx, 
+		(int width, int height, double angle, double zoomx, double zoo
