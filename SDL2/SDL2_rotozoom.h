@@ -95,3 +95,4 @@ extern "C" {
 
 	*/
 
+	SDL2_ROTOZOOM_SC
