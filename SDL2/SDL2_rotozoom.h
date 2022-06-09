@@ -91,4 +91,7 @@ extern "C" {
 
 	/* 
 
-	Zooming fu
+	Zooming functions
+
+	*/
+
