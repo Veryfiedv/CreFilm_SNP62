@@ -99,4 +99,6 @@ extern "C" {
 
 	SDL2_ROTOZOOM_SCOPE void zoomSurfaceSize(int width, int height, double zoomx, double zoomy, int *dstwidth, int *dstheight);
 
-	/*
+	/* 
+
+	Shrinking f
