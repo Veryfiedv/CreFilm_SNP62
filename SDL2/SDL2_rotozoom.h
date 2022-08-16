@@ -101,4 +101,6 @@ extern "C" {
 
 	/* 
 
-	Shrinking functi
+	Shrinking functions
+
+	*/     
