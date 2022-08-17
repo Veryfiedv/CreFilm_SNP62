@@ -104,3 +104,5 @@ extern "C" {
 	Shrinking functions
 
 	*/     
+
+	SDL2
