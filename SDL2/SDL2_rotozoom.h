@@ -105,4 +105,4 @@ extern "C" {
 
 	*/     
 
-	SDL2_ROTOZOOM_SCOPE SDL_S
+	SDL2_ROTOZOOM_SCOPE SDL_Surface *s
