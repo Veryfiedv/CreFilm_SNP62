@@ -105,4 +105,4 @@ extern "C" {
 
 	*/     
 
-	SDL2_ROTOZOOM_SCOPE SDL_Surface *shrinkSurface(SDL_Surf
+	SDL2_ROTOZOOM_SCOPE SDL_Surface *shrinkSurface(SDL_Surface * src, in
