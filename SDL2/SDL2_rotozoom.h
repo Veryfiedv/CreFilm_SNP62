@@ -109,4 +109,4 @@ extern "C" {
 
 	/* 
 
-	Specialized rot
+	Specialized rotation fun
