@@ -109,4 +109,4 @@ extern "C" {
 
 	/* 
 
-	S
+	Specialized rot
