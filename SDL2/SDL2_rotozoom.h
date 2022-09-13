@@ -111,4 +111,6 @@ extern "C" {
 
 	Specialized rotation functions
 
-	
+	*/
+
+	SDL2_ROTOZO
