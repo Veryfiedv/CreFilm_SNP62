@@ -113,4 +113,4 @@ extern "C" {
 
 	*/
 
-	SDL2_ROTOZO
+	SDL2_ROTOZOOM_SCOPE SDL_Su
