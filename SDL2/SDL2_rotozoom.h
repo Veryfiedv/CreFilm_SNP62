@@ -109,4 +109,6 @@ extern "C" {
 
 	/* 
 
-	Specialized rotation fun
+	Specialized rotation functions
+
+	
