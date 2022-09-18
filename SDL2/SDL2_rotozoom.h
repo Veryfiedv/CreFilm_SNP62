@@ -113,4 +113,4 @@ extern "C" {
 
 	*/
 
-	SDL2_ROTOZOOM_SCOPE SDL_Surface* rotateSurface90Degrees(SDL_Surface* src, int numClockw
+	SDL2_ROTOZOOM_SCOPE SDL_Surface* rotateSurface90Degrees(SDL_Surface* src, int numClockwiseTurns);
