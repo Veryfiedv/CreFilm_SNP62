@@ -116,4 +116,5 @@ extern "C" {
 	SDL2_ROTOZOOM_SCOPE SDL_Surface* rotateSurface90Degrees(SDL_Surface* src, int numClockwiseTurns);
 
 	/* Ends C function definitions when using C++ */
-#ifdef __c
+#ifdef __cplusplus
+}
