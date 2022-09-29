@@ -120,4 +120,4 @@ extern "C" {
 }
 #endif
 
-#endif				/* _SDL2_rotozoom_h 
+#endif				/* _SDL2_rotozoom_h */
