@@ -1,1 +1,1 @@
-LIB_DI
+LIB_DIR=./lib_li
