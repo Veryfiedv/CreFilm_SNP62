@@ -1,1 +1,2 @@
-LIB_DIR=./lib_li
+LIB_DIR=./lib_linux
+g++ -o sa
