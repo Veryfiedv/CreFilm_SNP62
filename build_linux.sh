@@ -1,2 +1,2 @@
 LIB_DIR=./lib_linux
-g++ -o sample_ball sam
+g++ -o sample_ball sample_bal
