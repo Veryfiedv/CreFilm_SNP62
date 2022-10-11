@@ -1,2 +1,2 @@
 LIB_DIR=./lib_osx
-g++ 
+g++ -o sample_ball s
