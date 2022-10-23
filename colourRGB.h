@@ -4,4 +4,6 @@
 */
 
 #ifndef COLOURRGB_H
-#define 
+#define COLOURRGB_H
+
+#incl
