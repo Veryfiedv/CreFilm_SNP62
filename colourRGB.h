@@ -9,4 +9,5 @@
 #include <iostream>
 
 class ColourRGB{
-pub
+public:
+	Colour
