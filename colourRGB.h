@@ -8,4 +8,5 @@
 
 #include <iostream>
 
-class C
+class ColourRGB{
+pub
