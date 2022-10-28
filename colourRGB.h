@@ -6,4 +6,6 @@
 #ifndef COLOURRGB_H
 #define COLOURRGB_H
 
-#include <iostrea
+#include <iostream>
+
+class C
