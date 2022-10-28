@@ -10,4 +10,5 @@
 
 class ColourRGB{
 public:
-	Colour
+	ColourRGB(){
+		setRGB(0,0,
