@@ -11,4 +11,6 @@
 class ColourRGB{
 public:
 	ColourRGB(){
-		setRGB(0,0,
+		setRGB(0,0,0);
+	}
+	Colo
