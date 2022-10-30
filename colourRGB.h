@@ -13,4 +13,4 @@ public:
 	ColourRGB(){
 		setRGB(0,0,0);
 	}
-	Colo
+	ColourRGB(int r, i
