@@ -13,4 +13,4 @@ public:
 	ColourRGB(){
 		setRGB(0,0,0);
 	}
-	ColourRGB(int r, i
+	ColourRGB(int r, int g, int b
