@@ -16,4 +16,4 @@ public:
 	ColourRGB(int r, int g, int b){
 		setRGB(r,g,b);
 	}
-	//No need to defin
+	//No need to define copy cons
