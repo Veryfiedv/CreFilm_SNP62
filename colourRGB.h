@@ -16,4 +16,7 @@ public:
 	ColourRGB(int r, int g, int b){
 		setRGB(r,g,b);
 	}
-	//No need to define copy constructors, since the default ones will
+	//No need to define copy constructors, since the default ones will suffice.
+	
+	
+	class 
