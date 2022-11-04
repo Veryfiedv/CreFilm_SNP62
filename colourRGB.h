@@ -19,4 +19,4 @@ public:
 	//No need to define copy constructors, since the default ones will suffice.
 	
 	
-	class 
+	class InvalidCol
