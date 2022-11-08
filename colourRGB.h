@@ -19,4 +19,6 @@ public:
 	//No need to define copy constructors, since the default ones will suffice.
 	
 	
-	class InvalidColourIndex{}
+	class InvalidColourIndex{};
+	
+	int& o
