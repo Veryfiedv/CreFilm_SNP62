@@ -21,4 +21,5 @@ public:
 	
 	class InvalidColourIndex{};
 	
-	int& operator [
+	int& operator [] (int i){
+		if 
