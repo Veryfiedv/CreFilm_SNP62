@@ -23,4 +23,5 @@ public:
 	
 	int& operator [] (int i){
 		if (i == 0)
-			retur
+			return r;
+		i
