@@ -22,4 +22,5 @@ public:
 	class InvalidColourIndex{};
 	
 	int& operator [] (int i){
-		if 
+		if (i == 0)
+			retur
