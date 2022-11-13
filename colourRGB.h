@@ -25,4 +25,5 @@ public:
 		if (i == 0)
 			return r;
 		if (i == 1)
-			return 
+			return g;
+		if (i == 2)
