@@ -28,3 +28,4 @@ public:
 			return g;
 		if (i == 2)
 			return b;
+		throw 
