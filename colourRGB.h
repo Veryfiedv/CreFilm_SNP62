@@ -27,3 +27,4 @@ public:
 		if (i == 1)
 			return g;
 		if (i == 2)
+			return b;
