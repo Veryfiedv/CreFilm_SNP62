@@ -31,3 +31,4 @@ public:
 		throw InvalidColourIndex();
 	}
 	
+	void pr
