@@ -31,4 +31,5 @@ public:
 		throw InvalidColourIndex();
 	}
 	
-	void pr
+	void print(){
+		st
