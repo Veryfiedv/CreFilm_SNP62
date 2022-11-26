@@ -32,4 +32,4 @@ public:
 	}
 	
 	void print(){
-		std::cout << "(" << 
+		std::cout << "(" << r << "," 
