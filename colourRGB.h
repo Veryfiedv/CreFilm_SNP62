@@ -35,4 +35,4 @@ public:
 		std::cout << "(" << r << "," << g << "," << b << ")";
 	}
 	
-	frie
+	friend std::ostrea
