@@ -35,4 +35,4 @@ public:
 		std::cout << "(" << r << "," << g << "," << b << ")";
 	}
 	
-	friend std::ostrea
+	friend std::ostream & opera
