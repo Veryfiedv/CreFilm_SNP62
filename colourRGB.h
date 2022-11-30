@@ -32,4 +32,7 @@ public:
 	}
 	
 	void print(){
-		std::cout << "(" << r << "," << g << "," << b << 
+		std::cout << "(" << r << "," << g << "," << b << ")";
+	}
+	
+	frie
