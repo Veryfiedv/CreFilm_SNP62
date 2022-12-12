@@ -36,4 +36,4 @@ public:
 	}
 	
 	friend std::ostream & operator<< ( std::ostream& s, const ColourRGB& v){
-		 s << "(" << v.r << "," <
+		 s << "(" << v.r << "," << v.g << "," <
