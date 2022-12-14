@@ -40,4 +40,4 @@ public:
 		 return s;
 	}
 	
-	void 
+	void setRGB(int r, 
