@@ -41,4 +41,4 @@ public:
 	}
 	
 	void setRGB(int r, int g, int b){
-			th
+			this->r = r
