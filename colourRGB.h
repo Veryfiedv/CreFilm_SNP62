@@ -46,4 +46,6 @@ public:
 			this->b = b;
 	}
 	
-	in
+	int r,g,b;
+};
+
