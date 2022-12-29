@@ -49,3 +49,4 @@ public:
 	int r,g,b;
 };
 
+#endif
