@@ -10,3 +10,11 @@
 #include <vector>
 #include <cmath>
 #include <SDL2/SDL.h>
+#include <SDL2/SDL2_gfxPrimitives.h>
+
+#include "vector2d.h"
+#include "colourRGB.h"
+
+using namespace std;
+
+static const int WINDOW_SIZE_X = 800;
