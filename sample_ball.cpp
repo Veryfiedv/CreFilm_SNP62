@@ -18,3 +18,11 @@
 using namespace std;
 
 static const int WINDOW_SIZE_X = 800;
+static const int WINDOW_SIZE_Y = 600;
+
+
+static const ColourRGB BALL_COLOURS[] = {
+	ColourRGB(0,0,0),
+	ColourRGB(255,0,0),
+	ColourRGB(0,255,0),
+	ColourRGB(0,0,255),
