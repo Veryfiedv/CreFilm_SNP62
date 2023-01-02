@@ -44,3 +44,14 @@ public:
 	 //Pixels/second
 
 	static const int NUM_COLOURS = 7;
+	
+	void init_Canvas(){
+		bo_lose=false;
+		bo_win=false;
+		start_back=false;
+		for(int i=0;i<800;i++)
+			for(int j=0;j<600;j++)
+				get_goal[i][j]=false;
+		char_position0.x=0;
+		char_position0.y=390;
+		wizard_position0.x=0;
