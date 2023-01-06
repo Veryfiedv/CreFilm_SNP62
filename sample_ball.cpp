@@ -55,3 +55,17 @@ public:
 		char_position0.x=0;
 		char_position0.y=390;
 		wizard_position0.x=0;
+		wizard_position0.y=390;
+		wizard_position.x=50;
+		wizard_position.y=330;
+		char_position.x=UNIT_X;
+		char_position.y=UNIT_Y;
+		wizard_direction.x=cos(0);
+		wizard_direction.y=sin(0);
+		char_direction.x=cos(0);
+		char_direction.y=sin(0);
+		coin_num=0;
+		ball_direction=new Vector2d[6];
+		ball_direction[0]=Vector2d(cos(30*(M_PI/180.0)),sin(30*(M_PI/180.0)));
+		ball_direction[1]=Vector2d(cos(60*(M_PI/180.0)),sin(60*(M_PI/180.0)));
+		ball_direction[2]=Vector2d(cos(80*(M_PI/180.0)),sin(90*(M_PI/180.0)));
