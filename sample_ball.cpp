@@ -69,3 +69,15 @@ public:
 		ball_direction[0]=Vector2d(cos(30*(M_PI/180.0)),sin(30*(M_PI/180.0)));
 		ball_direction[1]=Vector2d(cos(60*(M_PI/180.0)),sin(60*(M_PI/180.0)));
 		ball_direction[2]=Vector2d(cos(80*(M_PI/180.0)),sin(90*(M_PI/180.0)));
+		ball_direction[3]=Vector2d(cos(120*(M_PI/180.0)),sin(120*(M_PI/180.0)));
+		ball_direction[4]=Vector2d(cos(150*(M_PI/180.0)),sin(150*(M_PI/180.0)));
+		ball_direction[5]=Vector2d(cos(180*(M_PI/180.0)),sin(170*(M_PI/180.0)));
+		ball_position=new Vector2d[6];
+		ball_position[0]=Vector2d(CANVAS_SIZE_X/2,CANVAS_SIZE_Y/5);
+		ball_position[1]=Vector2d(CANVAS_SIZE_X/3,CANVAS_SIZE_Y/2);
+		ball_position[2]=Vector2d(CANVAS_SIZE_X/4,CANVAS_SIZE_Y/2);
+		ball_position[3]=Vector2d(CANVAS_SIZE_X/3,CANVAS_SIZE_Y/3);
+		ball_position[4]=Vector2d(CANVAS_SIZE_X/3,CANVAS_SIZE_Y/4);
+		ball_position[5]=Vector2d(CANVAS_SIZE_X/2,CANVAS_SIZE_Y/2);
+
+		
