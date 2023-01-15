@@ -123,3 +123,19 @@ public:
 						if(bo_win||bo_lose){
 						start_game(r);
 						return;
+						}
+						handle_mouse_up(e.button.x,e.button.y,e.button.button);
+						break;
+					default:
+						break;
+				}
+			}
+
+			draw(r,delta_ms);
+			
+			last_frame = current_frame;
+			frame_number++;
+			
+		}
+		
+	}
