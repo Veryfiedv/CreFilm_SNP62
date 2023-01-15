@@ -109,3 +109,17 @@ public:
 						return;
 					case SDL_KEYDOWN:
 						//e.key stores the key pressed
+						handle_key_down(e.key.keysym.sym);
+						break;
+					case SDL_MOUSEMOTION:
+						//e.motion contains the relevant mouse position information			
+						handle_mouse_moved(e.motion.x,e.motion.y);
+						break;
+					case SDL_MOUSEBUTTONDOWN:
+						//e.button contains the relevant mouse position and button information
+						handle_mouse_down(e.button.x,e.button.y,e.button.button);
+						break;
+					case SDL_MOUSEBUTTONUP:	
+						if(bo_win||bo_lose){
+						start_game(r);
+						return;
