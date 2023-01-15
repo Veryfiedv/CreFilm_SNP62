@@ -81,3 +81,18 @@ public:
 		ball_position[5]=Vector2d(CANVAS_SIZE_X/2,CANVAS_SIZE_Y/2);
 
 		
+		ball_colour_idx = 0;
+	}
+
+	void start_game(SDL_Renderer* r){
+		
+		init_Canvas();
+		load_image(r);
+		frame_loop(r);
+		
+	}
+	void frame_loop(SDL_Renderer* r){
+		start=0;
+		unsigned int last_frame = SDL_GetTicks();
+		unsigned int frame_number = 0;
+		while(1){
