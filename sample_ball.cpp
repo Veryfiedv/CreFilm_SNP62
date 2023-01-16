@@ -139,3 +139,19 @@ public:
 		}
 		
 	}
+private:
+	void intro(SDL_Renderer* r){
+		SDL_Rect SrcRect={0,0,CANVAS_SIZE_X,CANVAS_SIZE_Y};
+		SDL_Rect TargetRect={0,0,CANVAS_SIZE_X,CANVAS_SIZE_Y};
+		SDL_RenderCopy(r,background,&SrcRect,&TargetRect);
+		
+		if(wizard_position0.x>CANVAS_SIZE_X){
+			wizard_position0.x=0;
+			char_position0.x=0;
+		}
+		Vector2d new_position = char_position0 + position_delta*char_direction;
+		SDL_Rect SrcRect0={0,127,34,38};
+		SDL_Rect SrcRect1={48,127,34,38};
+		SDL_Rect SrcRect2={96,127,34,38};
+		SDL_Rect SrcRect3={144,127,34,38};		
+		char_position0=new_position;
