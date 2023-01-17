@@ -155,3 +155,17 @@ private:
 		SDL_Rect SrcRect2={96,127,34,38};
 		SDL_Rect SrcRect3={144,127,34,38};		
 		char_position0=new_position;
+		SDL_Rect TargetRect1={char_position0.x,char_position0.y,65,65};
+		if(coin_num<VELOCITY[6]*10){
+			SDL_RenderCopy(r,character,&SrcRect3,&TargetRect1);
+		}else if(coin_num<VELOCITY[6]*20){
+			SDL_RenderCopy(r,character,&SrcRect2,&TargetRect1);
+		}else if(coin_num<VELOCITY[6]*30){
+			SDL_RenderCopy(r,character,&SrcRect1,&TargetRect1);
+		}else if(coin_num<VELOCITY[6]*40){
+			SDL_RenderCopy(r,character,&SrcRect0,&TargetRect1);
+		}else{
+			coin_num=0;
+		}
+		coin_num++;	
+		if(char_position0.x>150){
