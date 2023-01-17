@@ -182,3 +182,14 @@ private:
 			if(start==2){
 				char_direction.x = cos(-90*(M_PI/180));
 				char_direction.y = sin(-90*(M_PI/180));
+			}
+		}else if (key == SDLK_DOWN){	
+			if(start==2){
+				char_direction.x = cos(90*(M_PI/180));
+				char_direction.y = sin(90*(M_PI/180));
+			}
+		}else if (key == SDLK_RIGHT){	
+			if(start==2){
+				char_direction.x = cos(0*(M_PI/180));
+				char_direction.y = sin(0*(M_PI/180));
+			}
