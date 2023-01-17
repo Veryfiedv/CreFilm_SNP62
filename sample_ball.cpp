@@ -169,3 +169,16 @@ private:
 		}
 		coin_num++;	
 		if(char_position0.x>150){
+			SDL_Rect SrcRect4={0,136,34,57};
+			Vector2d new_position1 = wizard_position0 + position_delta*char_direction;
+			wizard_position0=new_position1;
+			SDL_Rect TargetRect2={wizard_position0.x,wizard_position0.y,65,65};
+			SDL_RenderCopy(r,wizard,&SrcRect4,&TargetRect2);
+		}
+		return;
+	}
+	void handle_key_down(SDL_Keycode key){
+		if (key == SDLK_UP){
+			if(start==2){
+				char_direction.x = cos(-90*(M_PI/180));
+				char_direction.y = sin(-90*(M_PI/180));
