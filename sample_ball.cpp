@@ -193,3 +193,13 @@ private:
 				char_direction.x = cos(0*(M_PI/180));
 				char_direction.y = sin(0*(M_PI/180));
 			}
+		}else if (key == SDLK_LEFT){	
+			if(start==2){
+				char_direction.x = cos(180*(M_PI/180));
+				char_direction.y = sin(180*(M_PI/180));
+			}
+		}else if (key == SDLK_r){
+			Vector2d rotation( cos(30*(M_PI/180)), sin(30*(M_PI/180)) );
+			Vector2d new_direction(
+					rotation.x*ball_direction[0].x - rotation.y*ball_direction[0].y,
+					rotation.x*ball_direction[0].y + rotation.y*ball_direction[0].x);
