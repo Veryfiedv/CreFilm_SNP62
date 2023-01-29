@@ -203,3 +203,18 @@ private:
 			Vector2d new_direction(
 					rotation.x*ball_direction[0].x - rotation.y*ball_direction[0].y,
 					rotation.x*ball_direction[0].y + rotation.y*ball_direction[0].x);
+			ball_direction[0] = new_direction;
+		}
+	}
+	void handle_mouse_down(int x, int y, int button){
+	}
+	void handle_mouse_up(int x, int y, int button){	
+			if(start<2){
+				start++;
+				return;
+			}	
+	}
+	
+	void handle_mouse_moved(int x, int y){
+		mouse_pos4.x=mouse_pos3.x;
+		mouse_pos4.y=mouse_pos3.y;
