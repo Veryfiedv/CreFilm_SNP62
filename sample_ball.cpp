@@ -218,3 +218,14 @@ private:
 	void handle_mouse_moved(int x, int y){
 		mouse_pos4.x=mouse_pos3.x;
 		mouse_pos4.y=mouse_pos3.y;
+		mouse_pos3.x=mouse_pos2.x;
+		mouse_pos3.y=mouse_pos2.y;
+		mouse_pos2.x=mouse_pos1.x;
+		mouse_pos2.y=mouse_pos1.y;
+		mouse_pos1.x=mouse_pos.x;
+		mouse_pos1.y=mouse_pos.y;
+		mouse_pos.x=x;
+		mouse_pos.y=y;
+		ball_colour_idx--;
+		if (ball_colour_idx < 0)
+			ball_colour_idx = NUM_COLOURS-1;
