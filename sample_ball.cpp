@@ -229,3 +229,13 @@ private:
 		ball_colour_idx--;
 		if (ball_colour_idx < 0)
 			ball_colour_idx = NUM_COLOURS-1;
+	}
+	void load_image(SDL_Renderer *renderer){
+		bmp=SDL_LoadBMP("pictures/character.bmp");
+		character=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		
+		bmp=SDL_LoadBMP("pictures/wizard.bmp");
+		wizard=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		
