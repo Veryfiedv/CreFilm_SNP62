@@ -239,3 +239,20 @@ private:
 		wizard=SDL_CreateTextureFromSurface(renderer,bmp);
 		SDL_FreeSurface(bmp);
 		
+		bmp=SDL_LoadBMP("pictures/background0.bmp");
+		background0=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);		
+		
+		bmp=SDL_LoadBMP("pictures/background.bmp");
+		background=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		
+		bmp=SDL_LoadBMP("pictures/background1.bmp");
+		background1=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+	
+		bmp=SDL_LoadBMP("pictures/plant1.bmp");
+		plant1=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		
+		bmp=SDL_LoadBMP("pictures/plant2.bmp");
