@@ -256,3 +256,8 @@ private:
 		SDL_FreeSurface(bmp);
 		
 		bmp=SDL_LoadBMP("pictures/plant2.bmp");
+		plant2=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		
+		bmp=SDL_LoadBMP("pictures/plant3.bmp");
+		plant3=SDL_CreateTextureFromSurface(renderer,bmp);
