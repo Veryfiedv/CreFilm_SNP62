@@ -261,3 +261,19 @@ private:
 		
 		bmp=SDL_LoadBMP("pictures/plant3.bmp");
 		plant3=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		
+		bmp=SDL_LoadBMP("pictures/coin1.bmp");
+		coin1=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		bmp=SDL_LoadBMP("pictures/coin2.bmp");
+		coin2=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		bmp=SDL_LoadBMP("pictures/coin3.bmp");
+		coin3=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		bmp=SDL_LoadBMP("pictures/coin4.bmp");
+		coin4=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		bmp=SDL_LoadBMP("pictures/coin5.bmp");
+		coin5=SDL_CreateTextureFromSurface(renderer,bmp);
