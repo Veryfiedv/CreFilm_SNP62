@@ -277,3 +277,19 @@ private:
 		SDL_FreeSurface(bmp);
 		bmp=SDL_LoadBMP("pictures/coin5.bmp");
 		coin5=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		bmp=SDL_LoadBMP("pictures/coin6.bmp");
+		coin6=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		
+		
+		bmp=SDL_LoadBMP("pictures/stone.bmp");
+		stone=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		
+		bmp=SDL_LoadBMP("pictures/stone1.bmp");
+		stone1=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+
+		bmp=SDL_LoadBMP("pictures/win.bmp");
+		win=SDL_CreateTextureFromSurface(renderer,bmp);
