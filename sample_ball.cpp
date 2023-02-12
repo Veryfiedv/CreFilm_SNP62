@@ -313,3 +313,17 @@ private:
 			SDL_RenderClear(renderer);
 			SDL_Rect SrcRect={0,0,CANVAS_SIZE_X,CANVAS_SIZE_Y};
 			SDL_Rect TargetRect={0,0,CANVAS_SIZE_X,CANVAS_SIZE_Y};
+			SDL_RenderCopy(renderer,background0,&SrcRect,&TargetRect);
+		
+			for(int i=0;i<6;i++){
+				new_position(i,frame_delta_seconds);
+				filledCircleRGBA(renderer,ball_position[i].x,ball_position[i].y,BALL_RADIUS[i],BALL_COLOURS[i].r,BALL_COLOURS[i].g,BALL_COLOURS[i].b,150);
+				collision(i);
+			}
+			
+		}else if(start==1){
+			SDL_RenderClear(renderer);
+			intro(renderer);
+		}else{
+			SDL_RenderClear(renderer);
+			set_background(renderer);
