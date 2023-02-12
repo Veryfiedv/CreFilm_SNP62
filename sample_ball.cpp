@@ -293,3 +293,23 @@ private:
 
 		bmp=SDL_LoadBMP("pictures/win.bmp");
 		win=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+		
+		bmp=SDL_LoadBMP("pictures/lose.bmp");
+		lose=SDL_CreateTextureFromSurface(renderer,bmp);
+		SDL_FreeSurface(bmp);
+	}
+	void draw(SDL_Renderer *renderer, float frame_delta_ms){
+		float frame_delta_seconds = frame_delta_ms/1000.0;
+		position_delta = frame_delta_seconds*VELOCITY[6];
+
+		//The ball collides with the edge of the screen if the new position is less than BALL_RADIUS
+		//pixels away from any edge.	
+		SDL_SetRenderDrawColor(renderer, 128, 128, 128, 255);
+		if(bo_win||bo_lose){
+			game_over(renderer);
+		}else if(start==0){
+			
+			SDL_RenderClear(renderer);
+			SDL_Rect SrcRect={0,0,CANVAS_SIZE_X,CANVAS_SIZE_Y};
+			SDL_Rect TargetRect={0,0,CANVAS_SIZE_X,CANVAS_SIZE_Y};
