@@ -338,3 +338,17 @@ private:
 			filledCircleRGBA(renderer,mouse_pos3.x,mouse_pos3.y,4,BALL_COLOURS[6].r,BALL_COLOURS[6].g,BALL_COLOURS[6].b,100);
 			filledCircleRGBA(renderer,mouse_pos2.x,mouse_pos2.y,3,BALL_COLOURS[6].r,BALL_COLOURS[6].g,BALL_COLOURS[6].b,150);
 			filledCircleRGBA(renderer,mouse_pos1.x,mouse_pos1.y,2,BALL_COLOURS[6].r,BALL_COLOURS[6].g,BALL_COLOURS[6].b,200);
+			filledCircleRGBA(renderer,mouse_pos.x,mouse_pos.y,1,BALL_COLOURS[6].r,BALL_COLOURS[6].g,BALL_COLOURS[6].b,255);
+		}
+
+		SDL_RenderPresent(renderer);
+	}
+	void draw_wizard(SDL_Renderer *renderer){
+		if(box[(int)wizard_position.x+40][(int)wizard_position.y+1]==false){
+			wizard_direction.x= cos(180*(M_PI/180));
+			wizard_direction.y= sin(180*(M_PI/180));
+		}else if(box[(int)wizard_position.x-40][(int)wizard_position.y+1]==false){
+			wizard_direction.x= cos(0);
+			wizard_direction.y= sin(0);
+		}
+		Vector2d new_position = wizard_position + position_delta*wizard_direction;
