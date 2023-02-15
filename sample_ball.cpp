@@ -352,3 +352,19 @@ private:
 			wizard_direction.y= sin(0);
 		}
 		Vector2d new_position = wizard_position + position_delta*wizard_direction;
+		SDL_Rect SrcRect={0,136,34,57};
+		wizard_position=new_position;
+		SDL_Rect TargetRect={wizard_position.x,wizard_position.y-20,50,50};
+		SDL_RenderCopy(renderer,wizard,&SrcRect,&TargetRect);
+		if(((wizard_position.x-char_position.x)*(wizard_position.x-char_position.x)+
+		(wizard_position.y-char_position.y)*(wizard_position.y-char_position.y))<1000)
+			bo_lose=true;
+		return;
+	}
+	void draw_char(SDL_Renderer *renderer){
+		Vector2d new_position = char_position + position_delta*char_direction;
+		
+		if (new_position.x < 0||new_position.x > CANVAS_SIZE_X - UNIT_X||new_position.y < UNIT_Y||new_position.y > CANVAS_SIZE_Y - UNIT_Y)
+			new_position=char_position;
+
+		
