@@ -327,3 +327,14 @@ private:
 		}else{
 			SDL_RenderClear(renderer);
 			set_background(renderer);
+			set_coin(renderer);
+			draw_char(renderer);
+			draw_wizard(renderer);
+			
+		}
+		//mouse
+		if(mouse_pos.x>0&&mouse_pos.x<CANVAS_SIZE_X-1&&mouse_pos.y>0&&mouse_pos.y<CANVAS_SIZE_Y-1){
+			filledCircleRGBA(renderer,mouse_pos4.x,mouse_pos4.y,5,BALL_COLOURS[6].r,BALL_COLOURS[6].g,BALL_COLOURS[6].b,50);
+			filledCircleRGBA(renderer,mouse_pos3.x,mouse_pos3.y,4,BALL_COLOURS[6].r,BALL_COLOURS[6].g,BALL_COLOURS[6].b,100);
+			filledCircleRGBA(renderer,mouse_pos2.x,mouse_pos2.y,3,BALL_COLOURS[6].r,BALL_COLOURS[6].g,BALL_COLOURS[6].b,150);
+			filledCircleRGBA(renderer,mouse_pos1.x,mouse_pos1.y,2,BALL_COLOURS[6].r,BALL_COLOURS[6].g,BALL_COLOURS[6].b,200);
