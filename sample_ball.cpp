@@ -384,3 +384,17 @@ private:
 			SDL_Rect SrcRect1={48,127,34,38};
 			SDL_Rect SrcRect2={96,127,34,38};
 			SDL_Rect SrcRect3={144,127,34,38};
+			if(coin_num<VELOCITY[6]*450){
+				SDL_RenderCopy(renderer,character,&SrcRect,&TargetRect);
+			}else if(coin_num<VELOCITY[6]*900){
+				SDL_RenderCopy(renderer,character,&SrcRect1,&TargetRect);
+			}else if(coin_num<VELOCITY[6]*1350){
+				SDL_RenderCopy(renderer,character,&SrcRect2,&TargetRect);
+			}else if(coin_num<VELOCITY[6]*1800){
+				SDL_RenderCopy(renderer,character,&SrcRect3,&TargetRect);
+			}			
+		
+		}else if(char_direction.x==cos(180*(M_PI/180))){
+			SDL_Rect SrcRect={0,63,34,38};
+			SDL_Rect SrcRect1={48,63,34,38};
+			SDL_Rect SrcRect2={96,63,34,38};
