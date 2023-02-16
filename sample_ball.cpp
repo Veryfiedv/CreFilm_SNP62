@@ -368,3 +368,19 @@ private:
 			new_position=char_position;
 
 		
+		if(box[(int)new_position.x+10][(int)new_position.y+1]==false||box[(int)new_position.x+10][(int)new_position.y+UNIT_Y-5]==false||
+		box[(int)new_position.x+UNIT_X-10][(int)new_position.y+1]==false||box[(int)new_position.x+UNIT_X-10][(int)new_position.y+UNIT_Y-5]==false)
+			new_position=char_position;
+			
+		char_position = new_position;
+		for(int m=(int)char_position.x-10;m<(int)char_position.x+20;m++)
+			for(int n=(int)char_position.y-40;n<(int)char_position.y+UNIT_Y;n++)
+				get_goal[m][n]=true;
+		
+		SDL_Rect TargetRect={char_position.x,char_position.y-40,50,50};
+		
+		if(char_direction.x==cos(0*(M_PI/180))){
+			SDL_Rect SrcRect={0,127,34,38};
+			SDL_Rect SrcRect1={48,127,34,38};
+			SDL_Rect SrcRect2={96,127,34,38};
+			SDL_Rect SrcRect3={144,127,34,38};
