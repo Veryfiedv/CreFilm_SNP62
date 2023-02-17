@@ -440,3 +440,13 @@ private:
 				SDL_RenderCopy(renderer,character,&SrcRect3,&TargetRect);
 			}
 		}
+	}
+	void set_coin(SDL_Renderer *renderer){
+		SDL_Rect SrcRect={0,0,64,64};
+		int coin=0;
+		for(int i=0;i<CANVAS_SIZE_X;i=i+UNIT_X)
+			for(int j=UNIT_Y;j<CANVAS_SIZE_Y;j=j+UNIT_Y*2){
+				if(box[i][j]==true&&get_goal[i][j]!=true){
+					SDL_Rect TargetRect={i+10,j-20,30,30};
+					if(coin_num<position_delta*300){
+						SDL_RenderCopy(renderer,coin1,&SrcRect,&TargetRect);
