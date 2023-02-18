@@ -450,3 +450,16 @@ private:
 					SDL_Rect TargetRect={i+10,j-20,30,30};
 					if(coin_num<position_delta*300){
 						SDL_RenderCopy(renderer,coin1,&SrcRect,&TargetRect);
+					}else if(coin_num<VELOCITY[6]*600){
+						SDL_RenderCopy(renderer,coin2,&SrcRect,&TargetRect);
+					}else if(coin_num<VELOCITY[6]*900){
+						SDL_RenderCopy(renderer,coin3,&SrcRect,&TargetRect);
+					}
+					else if(coin_num<VELOCITY[6]*1200){
+						SDL_RenderCopy(renderer,coin4,&SrcRect,&TargetRect);
+					}
+					else if(coin_num<VELOCITY[6]*1500){
+						SDL_RenderCopy(renderer,coin5,&SrcRect,&TargetRect);
+					}
+					else if(coin_num<VELOCITY[6]*1800){
+						SDL_RenderCopy(renderer,coin6,&SrcRect,&TargetRect);
