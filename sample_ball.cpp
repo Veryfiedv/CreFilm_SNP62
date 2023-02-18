@@ -463,3 +463,14 @@ private:
 					}
 					else if(coin_num<VELOCITY[6]*1800){
 						SDL_RenderCopy(renderer,coin6,&SrcRect,&TargetRect);
+					}else{
+						coin_num=0;
+					}
+					coin++;
+				}	
+				coin_num++;
+			}
+			if(coin==0){
+				bo_win=true;
+				return;			
+			}
