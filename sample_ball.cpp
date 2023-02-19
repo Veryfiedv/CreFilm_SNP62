@@ -474,3 +474,10 @@ private:
 				bo_win=true;
 				return;			
 			}
+
+	}
+	void game_over(SDL_Renderer* r){
+		SDL_RenderClear(r);	
+		if(bo_win){
+			SDL_Rect m_pSrcRect={0,0,800,600};
+			SDL_Rect m_pTargetRect={0,0,800,600};
