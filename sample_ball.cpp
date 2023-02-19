@@ -481,3 +481,15 @@ private:
 		if(bo_win){
 			SDL_Rect m_pSrcRect={0,0,800,600};
 			SDL_Rect m_pTargetRect={0,0,800,600};
+			SDL_RenderCopy(r,win,&m_pSrcRect,&m_pTargetRect);
+		}else{
+			SDL_Rect m_pSrcRect={0,0,800,600};
+			SDL_Rect m_pTargetRect={0,0,800,600};
+			SDL_RenderCopy(r,lose,&m_pSrcRect,&m_pTargetRect);
+		}
+		return;
+	}
+	void set_background(SDL_Renderer *renderer){
+			SDL_Rect SrcRect={0,0,64,64};
+			for(int i=0;i<CANVAS_SIZE_X;i=i+UNIT_X)
+				for(int j=0;j<CANVAS_SIZE_Y;j=j+UNIT_Y){
