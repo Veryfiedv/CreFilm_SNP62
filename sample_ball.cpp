@@ -493,3 +493,15 @@ private:
 			SDL_Rect SrcRect={0,0,64,64};
 			for(int i=0;i<CANVAS_SIZE_X;i=i+UNIT_X)
 				for(int j=0;j<CANVAS_SIZE_Y;j=j+UNIT_Y){
+					SDL_Rect TargetRect={i,j,UNIT_X,UNIT_Y};
+					SDL_RenderCopy(renderer,background1,&SrcRect,&TargetRect);
+					if(start_back==false){
+						for(int m=i;m<i+UNIT_X;m++)
+							for(int n=j;n<j+UNIT_Y;n++)
+								box[m][n]=true;
+					}
+			}
+			
+			SDL_Rect SrcRect1={0,0,50,50};
+			for(int i=6*UNIT_X;i<UNIT_X*12;i=i+UNIT_X){
+				int j=6*UNIT_Y;
