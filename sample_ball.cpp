@@ -532,3 +532,13 @@ private:
 						for(int m=i;m<i+UNIT_X;m++)
 							for(int n=j;n<j+UNIT_Y;n++)
 								box[m][n]=false;
+				}
+			}
+			
+			for(int i=11*UNIT_X;i<14*UNIT_X;i=i+UNIT_X){
+				int j=14*UNIT_Y;
+				SDL_Rect TargetRect={i,j-20,50,50};
+				SDL_RenderCopy(renderer,stone,&SrcRect1,&TargetRect);
+				if(start_back==false){
+						for(int m=i;m<i+UNIT_X;m++)
+							for(int n=j;n<j+UNIT_Y;n++)
