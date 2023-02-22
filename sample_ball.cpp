@@ -542,3 +542,10 @@ private:
 				if(start_back==false){
 						for(int m=i;m<i+UNIT_X;m++)
 							for(int n=j;n<j+UNIT_Y;n++)
+								box[m][n]=false;
+				}
+			}
+			for(int j=3*UNIT_Y;j<16*UNIT_Y;j=j+UNIT_Y){
+				int i=15*UNIT_X;
+				SDL_Rect TargetRect={i,j-20,50,50};
+				SDL_RenderCopy(renderer,plant1,&SrcRect1,&TargetRect);
