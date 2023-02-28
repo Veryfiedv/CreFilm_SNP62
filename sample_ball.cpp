@@ -564,3 +564,16 @@ private:
 							for(int n=j;n<j+UNIT_Y;n++)
 								box[m][n]=false;
 				}
+			}
+			for(int j=UNIT_Y;j<6*UNIT_Y;j=j+UNIT_Y){
+				int i=2*UNIT_X;
+				SDL_Rect TargetRect={i,j-20,50,50};
+				SDL_RenderCopy(renderer,plant1,&SrcRect1,&TargetRect);
+				if(start_back==false){
+						for(int m=i;m<i+UNIT_X;m++)
+							for(int n=j;n<j+UNIT_Y;n++)
+								box[m][n]=false;
+				}
+			}
+
+			for(int j=5*UNIT_Y;j<7*UNIT_Y;j=j+UNIT_Y){
