@@ -640,3 +640,14 @@ private:
 			}
 			for(int i=9*UNIT_X;i<12*UNIT_X;i=i+UNIT_X){
 				int j=17*UNIT_Y;
+				SDL_Rect TargetRect={i,j-20,50,50};
+				SDL_RenderCopy(renderer,plant3,&SrcRect1,&TargetRect);
+				if(start_back==false){
+						for(int m=i;m<i+UNIT_X;m++)
+							for(int n=j;n<j+UNIT_Y;n++)
+								box[m][n]=false;
+				}
+			}
+			for(int i=4*UNIT_X;i<6*UNIT_X;i=i+UNIT_X){
+				int j=13*UNIT_Y;
+				SDL_Rect TargetRect={i,390-20,50,50};
