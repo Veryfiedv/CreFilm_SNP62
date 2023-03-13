@@ -701,3 +701,16 @@ private:
 			}
 			for(int i=6*UNIT_X;i<12*UNIT_X;i=i+UNIT_X){
 				int j=10*UNIT_Y;
+				SDL_Rect TargetRect={i,j-20,50,50};
+				SDL_RenderCopy(renderer,plant2,&SrcRect1,&TargetRect);
+				if(start_back==false){
+						for(int m=i;m<i+UNIT_X;m++)
+							for(int n=j;n<j+UNIT_Y;n++)
+								box[m][n]=false;
+				}
+			}
+			for(int j=14*UNIT_Y;j<17*UNIT_Y;j=j+UNIT_Y){
+				int i=UNIT_X*2;
+				SDL_Rect TargetRect={i,j-20,50,50};
+				SDL_RenderCopy(renderer,plant2,&SrcRect1,&TargetRect);
+				if(start_back==false){
