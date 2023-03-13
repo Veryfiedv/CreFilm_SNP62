@@ -714,3 +714,19 @@ private:
 				SDL_Rect TargetRect={i,j-20,50,50};
 				SDL_RenderCopy(renderer,plant2,&SrcRect1,&TargetRect);
 				if(start_back==false){
+						for(int m=i;m<i+UNIT_X;m++)
+							for(int n=j;n<j+UNIT_Y;n++)
+								box[m][n]=false;
+				}
+			}
+			for(int j=5*UNIT_Y;j<12*UNIT_Y;j=j+UNIT_Y){
+				int i=UNIT_X*13;
+				SDL_Rect TargetRect={i,j-20,50,50};
+				SDL_RenderCopy(renderer,plant3,&SrcRect1,&TargetRect);
+				if(start_back==false){
+						for(int m=i;m<i+UNIT_X;m++)
+							for(int n=j;n<j+UNIT_Y;n++)
+								box[m][n]=false;
+				}
+			}
+			for(int i=8*UNIT_X;i<10*UNIT_X;i=i+UNIT_X)
