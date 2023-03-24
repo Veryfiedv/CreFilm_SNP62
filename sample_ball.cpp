@@ -751,3 +751,13 @@ private:
 			}
 			start_back=true;
 	}
+
+	void new_position(int i,float delta){
+
+		Vector2d new_pos=ball_position[i] + VELOCITY[i]*delta*ball_direction[i];
+		if (new_pos.x <= BALL_RADIUS[i]){
+			//Collide with left edge			
+			//Determine how far past the collision point the new position is.
+			float offset_x = BALL_RADIUS[i]-new_pos.x;
+			//Mirror the direction around the y axis (since the ball bounces)
+			ball_direction[i].x = -ball_direction[i].x;
