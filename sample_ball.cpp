@@ -761,3 +761,21 @@ private:
 			float offset_x = BALL_RADIUS[i]-new_pos.x;
 			//Mirror the direction around the y axis (since the ball bounces)
 			ball_direction[i].x = -ball_direction[i].x;
+			new_pos.x += 2*offset_x;
+		}else if(new_pos.x >= CANVAS_SIZE_X - BALL_RADIUS[i]){
+			//Collide with right edge
+			//Determine how far past the collision point the new position is.
+			float offset_x = new_pos.x - (CANVAS_SIZE_X-BALL_RADIUS[i]);
+			//Mirror the direction around the y axis (since the ball bounces)
+			ball_direction[i].x = -ball_direction[i].x;
+			new_pos.x -= 2*offset_x;
+		}else if(new_pos.y <= BALL_RADIUS[i]){
+			//Collide with top
+			//Determine how far past the collision point the new position is.
+			float offset_y = BALL_RADIUS[i]-new_pos.y;
+			//Mirror the direction around the x axis (since the ball bounces)
+			ball_direction[i].y = -ball_direction[i].y;
+			new_pos.y += 2*offset_y;
+		}else if(new_pos.y >= CANVAS_SIZE_Y - BALL_RADIUS[i]){
+			//Collide with bottom
+			//Determine how far past the collision point the new position is.
