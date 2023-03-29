@@ -779,3 +779,15 @@ private:
 		}else if(new_pos.y >= CANVAS_SIZE_Y - BALL_RADIUS[i]){
 			//Collide with bottom
 			//Determine how far past the collision point the new position is.
+			float offset_y = new_pos.y - (CANVAS_SIZE_Y-BALL_RADIUS[i]);
+			//Mirror the direction around the x axis (since the ball bounces)
+			ball_direction[i].y = -ball_direction[i].y;
+			new_pos.y -= 2*offset_y;
+		}
+		ball_position[i]=new_pos;
+	}
+	void collision(int m){
+
+		for(int n=m+1;n<6;n++)
+			if(((ball_position[m].x-ball_position[n].x)*(ball_position[m].x-ball_position[n].x)+
+			(ball_position[m].y-ball_position[n].y)*(ball_position[m].y-ball_position[n].y))<(
