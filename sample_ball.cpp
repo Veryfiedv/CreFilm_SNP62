@@ -791,3 +791,18 @@ private:
 		for(int n=m+1;n<6;n++)
 			if(((ball_position[m].x-ball_position[n].x)*(ball_position[m].x-ball_position[n].x)+
 			(ball_position[m].y-ball_position[n].y)*(ball_position[m].y-ball_position[n].y))<(
+			(BALL_RADIUS[m]+BALL_RADIUS[n])*(BALL_RADIUS[m]+BALL_RADIUS[n]))){
+
+				Vector2d r=ball_position[m]-ball_position[n];
+				Vector2d n0=r/sqrt(r.x*r.x+r.y*r.y);
+				Vector2d u=n0*(ball_direction[m].x*n0.x+ball_direction[m].y*n0.y);
+				Vector2d w=ball_direction[m]-u;
+				ball_direction[m]=w-u;
+				u=n0*(ball_direction[n].x*n0.x+ball_direction[n].y*n0.y);
+				w=ball_direction[n]-u;
+			    ball_direction[n]=w-u;
+			   // int v1=((m-n)*VELOCITY[m]+2*n*VELOCITY[n])/(m+n);
+			    //int v2=VELOCITY[m]+v1-VELOCITY[n];
+			    //VELOCITY[m]=v1;
+				//VELOCITY[n]=v2;
+				
