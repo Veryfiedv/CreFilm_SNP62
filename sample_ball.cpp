@@ -806,3 +806,20 @@ private:
 			    //VELOCITY[m]=v1;
 				//VELOCITY[n]=v2;
 				
+				
+
+			}
+
+	}
+	Vector2d wizard_position,wizard_position0,wizard_direction,char_position0,char_position,char_direction;
+	Vector2d* ball_position,*ball_direction;
+	Vector2d mouse_pos,mouse_pos1,mouse_pos2,mouse_pos3,mouse_pos4;
+	int ball_colour_idx,coin_num,start;
+	SDL_Surface* bmp;
+	SDL_Texture* background,*background0,*wizard,*character,*background1,*coin1,*coin2,*coin3,*coin4,*coin5,*coin6,*plant1,*plant2,*plant3,*stone,*stone1,*win,*lose;
+	bool start_back,bo_win,bo_lose;
+	bool box[800][600],get_goal[800][600];
+	float position_delta;
+};
+
+int main(){
