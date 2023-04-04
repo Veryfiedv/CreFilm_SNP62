@@ -837,3 +837,8 @@ int main(){
 	SDL_RenderPresent(renderer);
 	
 	A2Canvas canvas;
+
+	canvas.start_game(renderer);
+	
+	return 0;
+}
