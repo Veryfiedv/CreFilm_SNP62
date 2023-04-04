@@ -823,3 +823,17 @@ private:
 };
 
 int main(){
+
+	SDL_Window* window = SDL_CreateWindow("CSC 205 A2",
+                              SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+                              WINDOW_SIZE_X, WINDOW_SIZE_Y, 
+							  SDL_WINDOW_SHOWN);
+							  
+	SDL_Renderer* renderer = SDL_CreateRenderer(window, -1, 0/*SDL_RENDERER_PRESENTVSYNC | SDL_RENDERER_ACCELERATED*/);
+
+	//Initialize the canvas to solid green
+	SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
+	SDL_RenderClear(renderer);
+	SDL_RenderPresent(renderer);
+	
+	A2Canvas canvas;
