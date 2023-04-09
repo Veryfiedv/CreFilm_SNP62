@@ -26,3 +26,15 @@ public:
 	}
 	//Unary negation
 	Vector2d operator-(){
+		return Vector2d(-x,-y);
+	}
+	
+	Vector2d operator - (const Vector2d& other){
+		return Vector2d(x-other.x, y-other.y);
+	}
+	
+	Vector2d& operator += (const Vector2d& other){
+		this->x += other.x;
+		this->y += other.y;
+		return *this;
+	}
