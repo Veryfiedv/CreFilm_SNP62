@@ -38,3 +38,14 @@ public:
 		this->y += other.y;
 		return *this;
 	}
+	Vector2d& operator -= (const Vector2d& other){
+		this->x -= other.x;
+		this->y -= other.y;
+		return *this;
+	}
+	
+	//Multiplication by scalar
+	Vector2d& operator *= (float f){
+		this->x *= f;
+		this->y *= f;
+		return *this;
