@@ -49,3 +49,13 @@ public:
 		this->x *= f;
 		this->y *= f;
 		return *this;
+	}
+	//Division by scalar
+	Vector2d& operator /= (float f){
+		this->x /= f;
+		this->y /= f;
+		return *this;
+	}
+	
+	friend Vector2d operator * (float f, const Vector2d& v){
+		return Vector2d(v.x*f, v.y*f);
