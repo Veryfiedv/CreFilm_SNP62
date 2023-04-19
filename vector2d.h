@@ -72,3 +72,16 @@ public:
 	float& operator [] (int i){
 		if (i == 0)
 			return x;
+		if (i == 1)
+			return y;
+		throw InvalidVectorIndex();
+	}
+	
+	float dot(const Vector2d& other){
+		return x*other.x + y*other.y;
+	}
+	
+	double length(){
+		return sqrt(dot(*this));
+	}
+	
