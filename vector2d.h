@@ -59,3 +59,16 @@ public:
 	
 	friend Vector2d operator * (float f, const Vector2d& v){
 		return Vector2d(v.x*f, v.y*f);
+	}
+	friend Vector2d operator * (const Vector2d& v, float f){
+		return Vector2d(v.x*f, v.y*f);
+	}
+	friend Vector2d operator / (const Vector2d& v, float f){
+		return Vector2d(v.x/f, v.y/f);
+	}
+	
+	class InvalidVectorIndex{};
+	
+	float& operator [] (int i){
+		if (i == 0)
+			return x;
