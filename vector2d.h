@@ -85,3 +85,16 @@ public:
 		return sqrt(dot(*this));
 	}
 	
+	void print(){
+		std::cout << "(" << x << "," << y << ")";
+	}
+	
+	friend std::ostream & operator<< ( std::ostream& s, const Vector2d& v){
+		 s << "(" << v.x << "," << v.y << ")";
+		 return s;
+	}
+	
+	float x,y;
+};
+
+#endif
